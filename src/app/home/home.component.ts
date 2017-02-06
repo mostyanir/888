@@ -1,9 +1,7 @@
 import { Component,  OnInit, NgZone} from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { Pipe} from '@angular/core';
-import { DomSanitizer, SafeResourceUrl, SafeUrl, SafeHtml} from '@angular/platform-browser';
 
-import {TooltipModule} from "ngx-tooltip";
 import { AppConsts } from '../app.module';
 
 @Component({
@@ -29,7 +27,6 @@ export class HomeComponent implements OnInit {
 
   constructor(
   private router: RouterModule,
-  private _sanitizer: DomSanitizer,
   public zone: NgZone
   ) { }
 
